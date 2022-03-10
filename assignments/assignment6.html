@@ -3,23 +3,71 @@
   <head>
     <title>Assignment6</title>
      <style>
-       #weapons li a {
+
+      #page {
+        background-color: lightyellow;
+      }
+
+      #myNavBar li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 12px 100px;
+
+      }
+      #myNavBar ul li:hover {
+        background: linear-gradient(to left, red, pink);
+      }
+
+      #myNavBar ul li:active {
+       background: linear-gradient(to left, red, pink);
+     }
+
+      #myNavBar li:first-child a {
+        color: black
+      }
+      #myNavBar li:nth-child(2) a {
+        color: pink
+      }
+      #myNavBar li:nth-child(3) a {
+        color: pink
+      }
+      #myNavBar li:nth-child(4) a {
+        color: pink
+      }
+
+       #weapons li {
         list-style-type: circle;
         color: blue
 
        }
        #weapons li:first-child a {
-         color: black
+         color: blue
        }
-
-
+       #weapons li:nth-child(2) a {
+         color: red
+       }
+       #weapons li:nth-child(3) a {
+         color: purple
+       }
+       #weapons li:nth-child(4) a {
+         color: orange
+       }
 
 
       </style>
 
-
   </head>
-  <body>
+  <body id="page">
+
+    <nav id="myNavBar">
+     <ul>
+       <li><a href="">Home</a></li>
+       <li><a href="">Gallery</a></li>
+       <li><a href="">About Me</a></li>
+       <li><a href="">Contact</a></li>
+     </ul>
+    </nav>
+
    <nav id="TMNT">
     <ul>
     <li><a href="">LEO</a></li>
@@ -27,6 +75,7 @@
     <li><a href="">DONNIE</a></li>
     <li><a href="">MIKEY</a></li>
     </ul>
+  </nav>
 
     <nav id="weapons">
      <ul>
@@ -35,6 +84,8 @@
      <li><a href="">Bo Staff</a></li>
      <li><a href="">Nunchucks</a></li>
      </ul>
+   </nav>
+
 
 
   </body>
