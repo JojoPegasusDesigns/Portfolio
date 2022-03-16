@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Example</title>
+    <style>
+     #uglyTable,
+     #uglyTable caption,
+     #uglyTable th,
+     #uglyTable td {
+       border: 1px solid black;
+       border-collapse: collapse;
+       padding: 12px;
+   }
+    #uglyTable {
+      margin-bottom: 48px;
+    }
+    #uglyheader {
+      background-color: lightpink;
+    }
+    #prettyTable {
+      border-collapse: collapse;
+    }
+    #prettyTable th {
+      padding-bottom: 12px;
+      padding-right: 24px;
+    }
+    #prettyTable td {
+      padding: 4px 0;
+    }
+    #prettyTable tr:nth-child(even) {
+      background-color: #F0F0F0
+    }
+    #prettyTable tr:hover {
+      background-color: lightpink
+    }
+    #johnny {
+      background-color: lightyellow;
+      font-size: 22px;
+    }
+    #uglyCol1 {
+      background-color: lightgreen;
+    }
+    </style>
+  </head>
+  <body>
+   <table id="uglyTable">
+     <caption>This is an ugly table</caption>
+     <colgroup>
+       <col id="uglyCol1" span="2">
+       <col>
+       <col>
+       <col>
+     </colgroup>
+     <thead>
+       <tr id="uglyheader">
+         <th>First name</th>
+         <th>Last name</th>
+         <th>Favorite TMNT</th>
+         <th>Favorite Ninja Weapon</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td id="johnny">Johhny</td>
+         <td>Grant</td>
+         <td>Raph</td>
+         <td>Sai</td>
+       </tr>
+       <tr>
+         <td>Brandon</td>
+         <td>Little</td>
+         <td>Leo</td>
+         <td>Katana</td>
+       </tr>
+       <tr>
+         <td>Shelia</td>
+         <td>Ramsley</td>
+         <td>Donnie</td>
+         <td>Bo Staff</td>
+       </tr>
+       <tr>
+         <td>Mikayla</td>
+         <td>Tidlow</td>
+         <td>Mikey</td>
+         <td>Nunchucks</td>
+       </tr>
+     </tbody>
+
+   </table>
+   <table id="prettyTable">
+     <thead>
+       <tr>
+         <th>First name</th>
+         <th>Last name</th>
+         <th>Favorite TMNT</th>
+         <th>Favorite Ninja Weapon</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Johhny</td>
+         <td>Grant</td>
+         <td>Raph</td>
+         <td>Sai</td>
+       </tr>
+       <tr>
+         <td>Brandon</td>
+         <td>Little</td>
+         <td>Leo</td>
+         <td>Katana</td>
+       </tr>
+       <tr>
+         <td>Shelia</td>
+         <td>Ramsley</td>
+         <td>Donnie</td>
+         <td>Bo Staff</td>
+       </tr>
+       <tr>
+         <td>Mikayla</td>
+         <td>Tidlow</td>
+         <td>Mikey</td>
+         <td>Nunchucks</td>
+       </tr>
+     </tbody>
+
+   </table>
+  </body>
+</html>
