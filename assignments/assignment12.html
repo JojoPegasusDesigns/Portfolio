@@ -50,14 +50,29 @@
 
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
-      #fakeLink {
-        flex-wrap: wrap-reverse;
-        background: linear-gradient(to right, lightblue, purple)
+        nav {
+        display: flex;
+        flex-direction: row;
+
+       }
+       aside {
+        display: flex;
+        flex-direction: row;
+        color: blue;
        }
       }
 
       /* your CSS for desktop goes in here */
       @media screen and (min-width: 800px) {
+       nav {
+        display: flex;
+        flex-direction: row-reverse;
+       }
+       aside {
+        display: flex;
+        flex-direction: column-reverse;
+        color: red;
+       }
 
       }
     </style>
