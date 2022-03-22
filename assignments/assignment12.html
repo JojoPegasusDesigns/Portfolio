@@ -50,15 +50,17 @@
 
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
+        .fakeLink2 {
+          padding: 120px;
+        }
         nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
        }
        aside {
         display: flex;
         flex-direction: row;
-        color: blue;
        }
       }
 
@@ -66,12 +68,11 @@
       @media screen and (min-width: 800px) {
        nav {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
        }
        aside {
         display: flex;
         flex-direction: column-reverse;
-        color: red;
        }
 
       }
