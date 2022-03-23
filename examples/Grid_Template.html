@@ -8,21 +8,27 @@
       }
       .block1 {
         background-color: red;
+
       }
       .block2 {
         background-color: blue;
+        grid-area: content;
       }
       .block3 {
         background-color: green;
+        grid-area: sidenav;
       }
       .block4 {
         background-color: orange;
+        grid-area: header;
       }
       .block5 {
         background-color: yellow;
+        grid-area: nav;
       }
       .block6 {
         background-color: purple;
+        grid-area: footer;
       }
       .block7 {
         background-color: black;
@@ -33,6 +39,13 @@
        grid-auto-rows: minmax(100px, auto);
        grid-template-columns: 1fr 600px 1fr;
        gap: 20px 40px;
+       grid-template-areas:
+           "header header header"
+           "nav nav nav"
+           "sidenav content content"
+           "sidenav content content"
+           "sidenav content content"
+           "footer footer footer";
       }
     </style>
   </head>
