@@ -5,12 +5,21 @@
     <style>
      .grid {
        display: grid;
+       grid-template-columns: repeat(5, 1fr);
+       grid-template-areas:
+             "header header header header header"
+             "sidenav1 content1 content1 content2 content2"
+             "sidenav1 content1 content1 content2 content2"
+             "content5 content3 content3 content4 content4"
+             "content5 content3 content3 content4 content4"
+             "footer footer footer footer footer";
      }
      .headtext {
        background-color: lightblue;
        padding: 70px;
        text-align: center;
        font-size: 30px;
+       grid-area: header;
      }
      .nav1 a {
       color: blue;
@@ -30,8 +39,33 @@
      .nav4 {
        font-size: 18px;
      }
-     img {
-       height: 500px;
+    .allnavs {
+      padding: 15px;
+      grid-area: sidenav1;
+    }
+    .p1 {
+      grid-area: content1;
+      padding: 20px;
+    }
+    img.image1 {
+      grid-area: content2;
+      padding: 20px;
+    }
+    .p2 {
+      grid-area: content3;
+      padding: 20px;
+    }
+    img.image2 {
+      grid-area: content4;
+      padding: 20px;
+    }
+    img {
+       height: 300px;
+     }
+     .footblock {
+       background-color: lightblue;
+       padding: 30px;
+       grid-area: footer;
      }
 
 
@@ -41,10 +75,12 @@
   <body id="backcolor">
    <div class="grid">
      <div class="headtext">Grids are awesome</div>
-     <div class="nav1"><a href="">Home</a></div>
-     <div class="nav2"><a href="">Gallery</a></div>
-     <div class="nav3"><a href="">About Me</a></div>
-     <div class="nav4"><a href="">Contact</a></div>
+     <div class="allnavs">
+       <div class="nav1"><a href="">Home</a></div>
+       <div class="nav2"><a href="">Gallery</a></div>
+       <div class="nav3"><a href="">About Me</a></div>
+       <div class="nav4"><a href="">Contact</a></div>
+     </div>
      <div class="p1">This is the start of my paragraph. Hoihefihesnf oesjlknfk
        jhbfuieruigiw ieufhiuewbfb  kwehfiuhwuef weuhfiuhweu ieufhiuwehfw
        kjfniwenufnowf owiehfoinwef oiehfonweklnf i7ts7tdgwa iufigwejekjfb. Tde
@@ -54,7 +90,7 @@
        eirioneoifjie iuehrgiue dhguer fehrlfn oierhflnew noiferf rufhlenrg.
        ui77etoerigh kjrgrng kjrbgkjnrg kjrgbkjbr kjgbrj aiojejfn ieuhd kfjkebf
        hegfduiguief kuefbkjefb keubfjbweiubfwk.</div>
-     <img
+     <img class="image1"
        src="fairyoc.png" alt="fairy"
      />
      <div class="p2">This is the second paragraph. Goiejfijoe iejfoijwnioeh
@@ -62,9 +98,11 @@
      orgohe iuetiu kuehfuihs kjseuhfiurg jkgrbjg jrb d rgjrbg rjbgjks kjrbgkjsb
      trueskfnkes kjrghukeg kjgbkjrg kjbrjkgbs kjgbsberg kjgbskjbgf kjgbks htoe.
      Hfhioehf iushiogh righioshr kdjufhiesf kjuhdgues gkjhgies ghoeg kjhgiusheg.
-
      </div>
-
+     <img class="image2"
+      src="whitefairy.jpeg" alt="whitefairy"
+     />
+     <div class="footblock">Copyright 2022</div>
 
 
 
