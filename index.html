@@ -3,11 +3,16 @@
   <head>
     <title>MY PORTFOLIO HOME</title>
     <style>
+    .page {
+      background-image: url("images/mountainnight.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
      #myNavBar li {
        list-style-type: none;
        display: inline-block;
-       padding: 12px 140px;
+       padding: 12px 150px;
        text-align: center;
      }
      #myNavBar {
@@ -17,42 +22,46 @@
      }
 
      #myNavBar li:first-child a {
-       color: #be1515
+       color: white;
      }
      #myNavBar li:nth-child(2) a {
-       color: #be1515
+       color: white;
      }
      #myNavBar li:nth-child(3) a {
-       color: #be1515
+       color: white;
      }
      #myNavBar li:nth-child(4) a {
-       color: #be1515
+       color: white;
      }
 
      #myNavBar ul li:hover {
-       background: #ffeaf3;
+       background: black;
      }
 
      #myNavBar ul li:active {
-      background: linear-gradient(to left, #ffeaf3, white);
+      background: linear-gradient(to left, lightblue, darkblue, black);
     }
      #block {
        padding: 80px;
-       background-color: #ffeaf3;
        text-align: center;
        font-size: 35px;
-       color: #be1515;
+       color: white;
      }
      #p1 {
        text-align: center;
-       color: #be1515;
-       font-size: 24px;
+       color: white;
+       font-size: 28px;
+     }
+     img {
+       background-color: white;
+       opacity: 90%;
+       padding: 20px 600px;
      }
     </style>
 
 
   </head>
-  <body id="page">
+  <body class="page">
 
     <nav id="myNavBar">
      <ul>
@@ -75,9 +84,9 @@
       Welcome to my Portfolio
     </p>
     <p id="p1">
-      Here is where you can check out my gallery,
-      learn more about me, and contact me!
+    { Turning dreams and visions into reality }
     </p>
+
 
 
 
