@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html lang=en-US">
+<html lang="en-US">
   <head>
     <title>Transitions Example</title>
     <style>
      #tr1 {
-       transition: color 0.5s;
+       transition: color 1s;
      }
-
+     #tr1:hover {
+       color: blue;
+     }
+     #tr2 {
+       transition-property: transform;
+       transition-duration: 2s;
+       transition-timing-function: ease;
+       transition-delay: 0s;
+       transform-origin: left;
+     }
+     #tr2:hover {
+       transform: scale(3);
+     }
+     #box {
+       box-sizing: border-box;
+       height: 200px;
+       width: 200px;
+       background-color: lightblue;
+       transition:
+         border-radius 2s,
+         background-color 2s;
+     }
+     #box:hover {
+       background-color: lightpink;
+       border-radius: 100%;
+     }
+     #fairy {
+       height: 400px;
+       transition: transform 1s;
+     }
+     #fairy:hover {
+       transform: scale(1.5) rotate(360deg) translateY(220px);
+       opacity: 0.25;
+     }
 
 
     </style>
   </head>
 
   <body>
-   <h1 id="tr1">This is a basic transition.<h1>
+   <h1 id="tr1">
+     This is a basic transition.
+   </h1>
+   <h2 id="tr2">
+     This is another transition.
+   </h2>
+   <div id="box">
+   </div>
+   <img id="fairy"
+   src="../assignments/fairyoc.png" alt="fairy1"
+   />
 
 
 
