@@ -9,14 +9,57 @@
   <body>
 
    <form>
+     <h2>Text Inputs</h2>
     <div>
      <label for="firstNameInput">First Name</label>
      <input type="text" id="firstNameInput" name="firstName"
     </div>
     <div>
-     <label>Last Name</label>
+     <label for="lastNameInput">Last Name</label>
      <input type="text" id="lastNameInput" name="lastName"
     </div>
+
+    <h2>Textarea Inputs</h2>
+    <div>
+      <label for="codeFeelingsID">How do you feel about coding?</label>
+      <br>
+      <textarea id="codeFeelingsTD" rows="5"></textarea>
+    </div>
+
+    <h2>Radio Inputs</h2>
+    <p>What FIRST program are you in?</p>
+    <div>
+      <input type="radio" id="raspRadio" name="program" value="rasp"
+      <label for="raspRadio">Recording Arts and Show Production</label>
+    </div>
+    <div>
+      <input type="radio" id="dfvpRadio" name="program" value="dfvp"
+      <label for="dfvpRadio">Digital Filmmaking and Video Production</label>
+    </div>
+    <div>
+      <input type="radio" id="gdwdRadio" name="program" value="gdwd"
+      <label for="">Graphic Design and Web Development</label>
+    </div>
+
+    <h2>Checkbox Inputs</h2>
+    <p>How do you get to class?</p>
+    <div>
+     <input type="checkbox" id="bikeCheckbox" name="vehicleOption1" value="bike">
+     <label for="bikeCheckbox">Bike</label>
+    </div>
+    <div>
+     <input type="checkbox" id="busCheckbox" name="vehicleOption1" value="bus">
+     <label for="busCheckbox">Bus</label>
+    </div>
+    <div>
+     <input type="checkbox" id="carCheckbox" name="vehicleOption1" value="car">
+     <label for="carCheckbox">Car</label>
+    </div>
+    <div>
+     <input type="checkbox" id="bedCheckbox" name="vehicleOption1" value="bed">
+     <label for="bedCheckbox">I roll out of bed</label>
+    </div>
+
   </form>
   </body>
 </html>
