@@ -13,6 +13,9 @@
 
   <body>
 
+   <input type="button" id="button1" value="Click 1">
+   <input type="button" id="colorButton" value="Click to change color">
+
    <script type="text/javascript">
      let greeting = 'Hello World!';
 
@@ -23,6 +26,17 @@
      logText(greeting);
      logText('How are you doing?');
      logText('Are you sure?');
+
+     let button1 = document.getElementById('button1');
+     button1.onclick = () => {
+       logText(button1.id);
+     };
+
+     function setRandomBackgroundColor() {
+       let body = document.getElementsByTagName('body')[0];
+       body.style.backgroundColor = 'red';
+     }
+    setRandomBackgroundColor();
 
     </script>
   </body>
