@@ -36,7 +36,7 @@
       font-size: 18px;
     }
     .nav1 {
-      padding: 15px;
+      padding: 15px 22px;
     }
     .nav2 a {
      text-decoration: none;
@@ -44,7 +44,7 @@
      font-size: 18px;
     }
     .nav2 {
-      padding: 15px;
+      padding: 15px 22px;
     }
     .nav3 a {
       text-decoration: none;
@@ -52,7 +52,7 @@
       font-size: 18px;
     }
     .nav3 {
-      padding: 15px;
+      padding: 15px 22px;
     }
     .nav4 a {
       text-decoration: none;
@@ -60,7 +60,7 @@
       font-size: 18px;
     }
     .nav4 {
-      padding: 15px;
+      padding: 15px 22px;
     }
     .nav5 a {
       text-decoration: none;
@@ -68,13 +68,60 @@
       font-size: 18px;
     }
     .nav5 {
-      padding: 15px;
+      padding: 15px 22px;
+    }
+    .nav6 a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+    .nav6 {
+      padding: 15px 22px;
+    }
+    .nav7 a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+    .nav7 {
+      padding: 15px 22px;
     }
     #navBar {
       grid-area: nav;
       display: flex;
       flex-direction: row;
       background-color: lightgrey;
+    }
+    #bigslide {
+      height: 299px;
+     padding: 10px 0px;
+     background-color: grey;
+    }
+    #slideshow {
+      grid-area: slide;
+    }
+    #sun {
+      height: 142px;
+      padding: 10px 0px;
+    }
+    #lightpic {
+      height: 142px;
+      padding: 10px 1px;
+    }
+    #arrow {
+      height: 142px;
+      padding: 10px 0px;
+    }
+    #adsrow {
+      grid-area: ad;
+      display: inline-block;
+      background-color: grey;
+    }
+    #ad1 {
+     height: 150px;
+    }
+    #adscolumn {
+      grid-area: sidebar;
     }
 
 
@@ -93,8 +140,23 @@
      <div class="nav3"><a href="">ABOUT GEORGE</a></div>
      <div class="nav4"><a href="">BOOKS</a></div>
      <div class="nav5"><a href="">FOR FANS</a></div>
+     <div class="nav6"><a href="">NEWS</a></div>
+     <div class="nav7"><a href="">MERCHANDISE</a></div>
    </div>
 
+   <div id="slideshow">
+    <img id="bigslide" src="bigslide.jpg" alt="fireslide" />
+   </div>
+
+   <div id="adsrow">
+    <img id="sun" src="sunface.jpg" alt="humansun" />
+    <img id="lightpic" src="light.png" alt="warrior" />
+    <img id="arrow" src="bowguy.jpg" alt="archer" />
+   </div>
+
+   <div id="adscolumn">
+    <img id="ad1" src="sidead1.png" alt="nextA"/>
+   </div>
 
    </div>
   </body>
