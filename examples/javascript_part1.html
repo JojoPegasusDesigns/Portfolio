@@ -19,7 +19,7 @@
    <script type="text/javascript">
      let greeting = 'Hello World!';
 
-     function logText(textTolog) {
+     function logText(textToLog) {
        console.log(textToLog);
      }
 
@@ -32,11 +32,23 @@
        logText(button1.id);
      };
 
+     function getRandomNumberBetween(lowValue, highValue) {
+      let range = highValue - lowValue;
+      let randomRangeValue = Math.random() * range;
+      return Math.floor(lowValue + randomRangeValue);
+     }
+
+
+
      function setRandomBackgroundColor() {
        let body = document.getElementsByTagName('body')[0];
-       body.style.backgroundColor = 'red';
+       let r = getRandomNumberBetween(0, 255);
+       let g = getRandomNumberBetween(0, 255);
+       let b = getRandomNumberBetween(0, 255);
+       body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
      }
-    setRandomBackgroundColor();
+    let colorButton = document.getElementById('colorButton');
+    colorButton.onclick = setRandomBackgroundColor;
 
     </script>
   </body>
