@@ -11,7 +11,7 @@
         box-sizing: border-box;
       }
       nav,
-      navLink {
+      .navLink {
         background-color: lightpink;
       }
       nav {
@@ -24,7 +24,7 @@
         position: relative;
       }
       .mainLink:hover {
-        background-color: lightblue;
+        background-color: lightyellow;
       }
       .mainLink,
       .dropdown {
@@ -34,9 +34,13 @@
         background-color: lightblue;
         position: absolute;
         width: 100%;
+        display: none;
       }
       .dropdown div {
         margin-bottom: 12px;
+      }
+      .navLink.dropdownOpen .dropdown {
+        display: block;
       }
 
 
@@ -56,12 +60,38 @@
           <div>Events</div>
         </div>
       </div>
+      <div class="navLink hoverDropdown">
+        <div class="mainLink">Portfolio2</div>
+        <div class="dropdown">
+          <div>Portraits</div>
+          <div>Landscapes</div>
+          <div>Modeling</div>
+          <div>Events</div>
+        </div>
+      </div>
+      <div class="navLink hoverDropdown">
+        <div class="mainLink">Projects</div>
+        <div class="dropdown">
+          <div>Photoshop</div>
+          <div>Illustrator</div>
+          <div>AfterEffects</div>
+          <div>Websites</div>
+        </div>
+      </div>
       <div class="navLink">
         <div class="mainLink">Other Link</div>
       </div>
     </nav>
 
     <script type="text/javascript">
+      $('.hoverDropdown').hover(
+       function() {
+        $(this).addClass('dropdownOpen');
+      },
+      function() {
+        $(this).removeClass('dropdownOpen');
+      }
+     );
 
     </script>
   </body>
