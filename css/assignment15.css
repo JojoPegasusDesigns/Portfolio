@@ -1,0 +1,21 @@
+#slideshow {
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.slideshowImage {
+  height: 400px;
+}
+
+#pageback {
+  background-color: lightpink;
+  text-align: center;
+}
+
+#infotext {
+  font-size: 20px;
+  color: darkred;
+}
