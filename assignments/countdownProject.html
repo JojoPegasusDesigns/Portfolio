@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Countdown ex</title>
+    <style>
+      body {
+        margin: 0;
+      }
+     #pageView {
+       align-items: center;
+       background-image: url(../images/grad.jpg);
+       background-size: cover;
+       display: flex;
+       height: 500px;
+       justify-content: center;
+     }
+     #countdown {
+       display: inline-block;
+       background-color: white;
+       padding: 20px;
+     }
+     #until {
+       text-align: center;
+     }
+     #logo {
+       height: 200px;
+       padding: 24px;
+     }
+
+
+    </style>
+  </head>
+  <body>
+    <h1 id="until">UNTIL GRADUATION!</h1>
+    <div id="pageView">
+    <h1 id="countdown">Loading...</h1>
+    </div>
+    <script type="text/javascript">
+     let deadline = new Date('July 22, 2022 16:30:00');
+
+     function setCountdown() {
+       let now = new Date();
+
+       let timeLeft = deadline.getTime() - now.getTime();
+
+       let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+       let hours = Math.floor(
+         (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+       );
+       var minutes = Math.floor(
+         (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+       );
+       var seconds = Math.floor(
+         (timeLeft % (1000 * 60)) / 1000
+       );
+
+       document.getElementById('countdown').innerHTML =
+       days + 'days' + hours + 'hours' + minutes + 'minutes' + seconds + 'seconds';
+     }
+
+      setInterval(setCountdown, 1000);
+
+    </script>
+
+    <img id="logo" src="../images/Pegasus_Designs_logoPNG.png" alt="pegDesign" />
+  </body>
+</html>
