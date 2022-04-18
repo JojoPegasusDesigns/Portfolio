@@ -11,15 +11,44 @@
     <title>Hello, world!</title>
     <style>
      .row > div {
-       background-color: lightpink;
-       border: 3px solid pink;
+       background-color: pink;
+       border: 3px solid skyblue;
      }
-
+     #horsetitle {
+       text-align: center;
+       padding: 20px;
+       color: white;
+       background-color: skyblue;
+     }
+     #imageHorses {
+       height: 400px;
+       width: 550px;
+     }
+     .card {
+       align-items: center;
+       text-align: center;
+       border: 1px dashed hotpink;
+     }
+     #butColor {
+       background-color: pink;
+       color: black;
+       border: 3px solid skyblue;
+     }
+     .list-group {
+       text-align: center;
+     }
+     #breedItem {
+       background-color: skyblue;
+       border: 3px solid skyblue;
+     }
+     #footText {
+       text-align: center;
+     }
 
     </style>
   </head>
   <body>
-    <h1>Horses</h1>
+    <h1 id="horsetitle">Horses</h1>
 
   <div class="container">
     <div class="row">
@@ -42,24 +71,52 @@
         </p>
       </div>
     </div>
-  </div>
-
-  <div class="container">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm-2">
         <h6>Grain Feed</h6>
-
       </div>
-      <div class="col-md">
+      <div class="col-md-6">
         <h6>Apples</h6>
-
       </div>
-      <div class="col-sm">
+      <div class="col-sm-4">
         <h6>Hay</h6>
-
       </div>
     </div>
   </div>
+
+  <div class="card">
+    <img id="imageHorses" src="../images/wildhorses.jpg" class="card-img-top" alt="horsesWild">
+
+    <div class="card-body">
+      <h5 class="card-title">Breeds</h5>
+      <p class="card-text">
+        View the different, magestic
+        breeds of all horses
+        around the world.
+      </p>
+      <a id="butColor" href="#" class="btn btn-primary">Click Here</a>
+    </div>
+  </div>
+
+  <ul class="list-group">
+   <li class="list-group-item list-group-item-light">Body Language</li>
+   <li class="list-group-item list-group-item-light">Training</li>
+   <li id="breedItem" class="list-group-item active">Breeds</li>
+   <li class="list-group-item list-group-item-light">Bonding with your Horse</li>
+  </ul>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <footer id="footText">
+   <div class="alert alert-info" role="alert">
+    !Make sure to research health care for your horse!
+   </div>
+  </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
