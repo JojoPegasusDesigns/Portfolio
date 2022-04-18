@@ -10,17 +10,17 @@
       background-attachment: fixed;
     }
 
-     #myNavBar li {
-       list-style-type: none;
-       display: inline-block;
-       padding: 12px 135px;
-       text-align: center;
-     }
-     #myNavBar {
-       display: flex;
-       flex-wrap: row;
-       flex: 1;
-     }
+    #myNavBar ul {
+     display: flex;
+     padding: 0px;
+    }
+    #myNavBar li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+    }
 
      #myNavBar li:first-child a {
        color: white;
@@ -53,20 +53,21 @@
        color: white;
        font-size: 28px;
      }
+     #imgContainer {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+     }
      img {
        background-color: white;
        opacity: 90%;
-       padding: 20px 600px;
        height: 400px;
      }
-
-     @media screen and (max-width: 480px) {
-       img {
-         padding: 20px;
-         height: 400px;
-       }
-
+     img {
+       padding: 80px;
      }
+
+
     </style>
 
 
@@ -83,7 +84,7 @@
     </nav>
   </main>
 
-    <div style="text-align: center;">
+    <div id="imgContainer" style="text-align: center;">
      <img
      src="images/Pegasus_Designs_logoPNG.png"
      alt="logo-design"
