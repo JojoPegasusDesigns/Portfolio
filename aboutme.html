@@ -3,50 +3,74 @@
   <head>
     <title>MY PORTFOLIO</title>
     <style>
+    #page {
+      background-image: url("images/mountainnight.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    #myNavBar ul {
+     display: flex;
+     padding: 0px;
+    }
+    #myNavBar li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+    }
+    #myNavBar li:first-child a {
+      color: white;
+    }
+    #myNavBar li:nth-child(2) a {
+      color: white;
+    }
+    #myNavBar li:nth-child(3) a {
+      color: white;
+    }
+    #myNavBar li:nth-child(4) a {
+      color: white;
+    }
 
-      #page {
-        background-color: white;
-      }
+    #myNavBar ul li:hover {
+      background: black;
+    }
 
-      #myNavBar li {
-        list-style-type: none;
-        display: inline-block;
-        padding: 12px 155px;
-        text-align: center;
-      }
+    #myNavBar ul li:active {
+     background: linear-gradient(to left, lightblue, darkblue, black);
+   }
 
-      #myNavBar li:first-child a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(2) a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(3) a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(4) a {
-        color: #be1515
-      }
+    #header {
+      color: black;
+      font-size: 24px;
+      text-align: center;
+      background-color: white;
+      padding: 40px;
+      opacity: 80%;
+    }
+    #MePic {
+      height: 400px;
+      opacity: 90%;
+      padding: 40px;
+    }
+    #imgContainer {
+      display: flex;
+      justify-content: center;
+    }
+    #paraText {
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #paraText {
+      background-color: white;
+      opacity: 80%;
+      padding: 30px;
+    }
 
-      #myNavBar ul li:hover {
-        background: #ffeaf3;
-      }
-
-      #myNavBar ul li:active {
-       background: linear-gradient(to left, #ffeaf3, white);
-     }
-
-     #header {
-       color: #be1515;
-       font-size: 24px;
-       text-align: center;
-       background-color: #ffeaf3;
-       padding: 40px;
-     }
-
-    </style>
-
-
+  </style>
   </head>
   <body id="page">
 
@@ -59,9 +83,23 @@
      </ul>
     </nav>
 
-    <p id="header">About Me</p>
+   <p id="header">About Me</p>
 
+   <div id="imgContainer">
+     <img id="MePic" src="images/myPIC2.jpeg" alt="me" />
+   </div>
 
+   <div id="paraText">
+     I jump-started my love for design in high school when I realized I
+     had a talent for computer arts. Throughout the years I created designs
+     for my school district and after graduation went right into the Graphic
+     Design and Web Development program at F.I.R.S.T. Institute.
+     I learned a lot about the designing softwares and how to create many
+     different works of art. On the sidelines, I was getting clients asking me
+     to create their business logo's while I was working at an apparel printing
+     shop. I can't wait to design more and see where my work takes me!
+
+  </div>
 
   </body>
 </html>
