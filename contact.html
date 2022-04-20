@@ -4,45 +4,114 @@
     <title>MY PORTFOLIO</title>
     <style>
 
-      #page {
-        background-color: white;
-      }
+    #page {
+      background-image: url("images/mountainnight.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    #myNavBar ul {
+     display: flex;
+     padding: 0px;
+    }
+    #myNavBar li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+    }
 
-      #myNavBar li {
-        list-style-type: none;
-        display: inline-block;
-        padding: 12px 155px;
-        text-align: center;
-      }
+    #myNavBar li:first-child a {
+      color: white;
+    }
+    #myNavBar li:nth-child(2) a {
+      color: white;
+    }
+    #myNavBar li:nth-child(3) a {
+      color: white;
+    }
+    #myNavBar li:nth-child(4) a {
+      color: white;
+    }
 
-      #myNavBar li:first-child a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(2) a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(3) a {
-        color: #be1515
-      }
-      #myNavBar li:nth-child(4) a {
-        color: #be1515
-      }
+    #myNavBar ul li:hover {
+      background: black;
+    }
 
-      #myNavBar ul li:hover {
-        background: #ffeaf3;
-      }
+    #myNavBar ul li:active {
+     background: linear-gradient(to left, lightblue, darkblue, black);
+   }
 
-      #myNavBar ul li:active {
-       background: linear-gradient(to left, #ffeaf3, white);
-     }
-
-     #header {
-       color: #be1515;
-       font-size: 24px;
-       text-align: center;
-       background-color: #ffeaf3;
-       padding: 40px;
-     }
+    #header {
+      color: black;
+      font-size: 24px;
+      text-align: center;
+      background-color: white;
+      padding: 40px;
+      opacity: 80%;
+    }
+    #foot {
+      color: lightblue;
+      opacity: 70%;
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      text-align: center;
+    }
+    #contactContainer {
+      text-align: center;
+      margin-top: 80px;
+      border: 2px dashed white;
+    }
+    #firstNameContainer {
+      color: white;
+      font-size: 22px;
+    }
+    #firstNameContainer input {
+      border: 2px solid skyblue;
+      padding: 5px 10px;
+    }
+    h2 {
+      color: white;
+      font-size: 35px;
+    }
+    #lastNameContainer {
+      color: white;
+      font-size: 22px;
+    }
+    #lastNameContainer input {
+      border: 2px solid skyblue;
+      padding: 5px 10px;
+    }
+    #emailContainer {
+      color: white;
+      font-size: 22px;
+    }
+    #emailContainer input {
+      border: 2px solid skyblue;
+      padding: 5px 60px;
+    }
+    #boxTitle {
+      color: white;
+      font-size: 22px;
+    }
+    #boxContainer {
+      padding: 40px;
+    }
+    #questionBox {
+      border: 3px solid skyblue;
+      padding: 20px 60px;
+    }
+    #radioTitle {
+      color: white;
+      font-size: 22px;
+    }
+    #radio1Btn,
+    #radio2Btn,
+    #radio3Btn {
+      color: white;
+      font-size: 18px;
+    }
 
     </style>
 
@@ -60,6 +129,52 @@
     </nav>
 
     <p id="header">Contact</p>
+
+   <div id="contactContainer">
+    <form action="submission_action.php">
+     <h2>Contact Form</h2>
+     <div id="firstNameContainer">
+      <label for="firstNameInput">First Name</label>
+      <input type="text" id="firstNameInput" name="firstName">
+     </div>
+     <div id="lastNameContainer">
+      <label for="lastNameInput">Last Name</label>
+      <input type="text" id="lastNameInput" name="lastName">
+     </div>
+     <div id="emailContainer">
+      <label for="emailInput">Email</label>
+      <input type="text" id="emailInput" name="emailName">
+     </div>
+
+     <div id="boxContainer">
+       <label id="boxTitle" for="questionBox">What are you contacting me about?</label>
+       <br>
+       <textarea id="questionBox" rows="5"></textarea>
+     </div>
+
+     <p id="radioTitle">Reason for contacting me:</p>
+     <div id="radio1Btn">
+       <input type="radio" id="1radio" name="program" value="rasp">
+       <label for="1radio">I'm curious about your services.</label>
+     </div>
+     <div id="radio2Btn">
+       <input type="radio" id="2radio" name="program" value="dfvp">
+       <label for="2radio">I'm interested in becoming a client.</label>
+     </div>
+     <div id="radio3Btn">
+       <input type="radio" id="3radio" name="program" value="gdwd">
+       <label for="3radio">Other</label>
+     </div>
+
+
+
+    </form>
+   <div>
+
+
+  <footer id="foot">
+       Created in 2022 by Josie Sizemore. All rights reserved.
+  </footer>
 
 
 
